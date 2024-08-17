@@ -7,6 +7,6 @@
     ./keymaps.nix
  
  	# Theme
-	./themes
+	./theme
  ];
 }
