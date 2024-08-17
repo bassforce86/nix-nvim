@@ -34,11 +34,12 @@
           nixvimPkgs = nixvim.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs ;
+            
+	    viAlias = true;
+	    vimAlias = true;
+	    useRuby = false;
+	    useNodeJs = false;
             module = import ./config; # import the module directly
-            # You can use `extraSpecialArgs` to pass additional arguments to your module files
-            extraSpecialArgs = {
-              inherit inputs;
-            };
           };
           nvim = nixvimPkgs.makeNixvimWithModule nixvimModule;
         in
