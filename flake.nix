@@ -34,11 +34,6 @@
           nixvimPkgs = nixvim.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs ;
-            
-	    viAlias = true;
-	    vimAlias = true;
-	    useRuby = false;
-	    useNodeJs = false;
             module = import ./config; # import the module directly
           };
           nvim = nixvimPkgs.makeNixvimWithModule nixvimModule;
