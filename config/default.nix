@@ -5,5 +5,8 @@
     ./globals.nix
     ./options.nix
     ./keymaps.nix
-  ];
+ 
+ 	# Theme
+	./themes
+ ];
 }
