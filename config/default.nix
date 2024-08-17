@@ -5,6 +5,7 @@
     ./globals.nix
     ./options.nix
     ./keymaps.nix
+    ./performance.nix
 
     # Theme
     ./theme
