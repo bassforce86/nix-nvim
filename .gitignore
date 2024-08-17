@@ -1,0 +1,9 @@
+*
+
+!*.nix
+!*.lock
+!*.md
+
+!/.gitignore
+
+!/*
