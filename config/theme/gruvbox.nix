@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
     extraPlugins = [ pkgs.vimPlugins.gruvbox-material ];
     colorscheme = "gruvbox-material";
